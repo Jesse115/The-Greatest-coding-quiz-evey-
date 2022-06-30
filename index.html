@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <header>
+        <div id = "highscore" class="highscores">
+            <a onclick = "getHighscore()" href=# title = "View Highscores"><h3>See who beat you</h3></a>
+        </div>
+        <div id="timer" class="time">
+            <h3>Time Expires In:  <span id="timeLeft">0</span></h3>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+    <div class = "wrap">
+        <div id = "startpage" class = "start-line">
+             <div class = "row">
+                <h2>Test your Knowledge of Coding</h2>
+            </div>
+                <div class = "row">
+                    <p>
+                        Welcome to my version of the coding quiz, I will test your knowledge of JavaScript.  Click the start button to begin you will have 100 second limit, correct answers
+                         will give you 40 points,
+                         but if you get one wrong, I will take 25 seconds. Good luck setting the high score, and make sure you enjoy yourself; Life is short don’t forget to smile!!!  
+                    </p>
+                    <button onclick = "startQuiz()" class = "submit-btn" title = "Start Coding Quiz">Here We GO</button>
+                <br>    
+                </div>
+            </div>
+            <div id="feedback" class="hide"></div>
+    </div>
+
+<script src= "assets/script.js"></script>
+</body>
+</html>
