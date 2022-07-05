@@ -5,7 +5,7 @@ var quizTimer;
 var feedbackEl = document.querySelector("#feedback");
 
 const questions = [
-
+// List questions and answers so you can interact with the page 
     {
         questionTitle: "The function and var are known as?",
         choices: ["Keywords", "data Types", "Declaration statements", "Prototypes" ],
@@ -69,7 +69,7 @@ const questions = [
 ]
  
 function startQuiz() {
-
+// quiz timer and time limit 
     timeLeft = 100;
     document.getElementById("timeLeft").innerHTML=timeLeft + " seconds";
 
@@ -84,7 +84,7 @@ function startQuiz() {
         }, 1000); 
         nextNewQuestion();
     }
-
+// ends quiz and gives message and score an option to add initials 
 function quizOver() {
     clearInterval(quizTimer);
     var finalQuizDetails = `
@@ -96,31 +96,31 @@ function quizOver() {
 
     document.getElementById("startpage").innerHTML = finalQuizDetails;
 }
-
+// saves scores 
 function saveHighscore() {
     localStorage.setItem("Highscore", totalScore);
     localStorage.setItem("MVP", document.getElementById('MVP').value);
 
     getHighscore();
 }
-
+// lists scores 
 function getHighscore() {
     var finalQuizDetails = `
-    <h2>` + localStorage.getItem("MVP") + `'s highscore is:</h2>
+    <h2>` + localStorage.getItem("MVP") + `'s score is:</h2>
     <h1>` + localStorage.getItem("Highscore") + `</h1><br >
     <button onclick="clearHighscore()" class="clear-btn" title = "Clear Score and Play Again!">Clear Score and Play Again!</button>
     <button onclick="resetGame()" class="reset-btn" title = "Just Play Again!">Just Play Again!</button>
     `;
     document.getElementById("startpage").innerHTML = finalQuizDetails;
 }
-
+// clears scores 
 function clearHighscore(){
     localStorage.setItem("Highscore", "");
     localStorage.setItem("MVP", "");
 
     resetGame();
 }    
-
+// restarts game 
 function resetGame() {
     clearInterval(quizTimer);
     totalScore = 0;
@@ -134,7 +134,7 @@ function resetGame() {
 
     document.getElementById("startpage").innerHTML = finalQuizDetails;
 }
-
+// message when you get the answer wrong 
 function wrongAnswer() {
     timeLeft -= 25;
 
@@ -154,7 +154,7 @@ function wrongAnswer() {
     nextNewQuestion();
 
 }
-
+// mnessage when yu get the question right 
 function correctAnswer() {
     totalScore += 40;
 
@@ -172,7 +172,7 @@ function correctAnswer() {
 
 }
 
-
+// moves to next question
 function nextNewQuestion() {
     nextQuestion++;
 

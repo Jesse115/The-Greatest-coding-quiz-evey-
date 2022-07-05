@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: antiquewhite;
+    background: purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2;
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.highscores a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.highscores a:active {
+    color: black;
+}
+
+.highscores a:visited {
+    color: black;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.row p {
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+button, .highscore-btn, .first-btn, .btn-choice, .submit-btn, .next-btn, .reset-btn, .clear-btn {
+    background-color: white;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 20px;
+    border-color: rgb(2, 204, 255);
+    appearance: none;
+}
+
+button:hover, .highscore-btn:hover, .first-btn:hover, .btn-choice:hover, .submit-btn:hover, .next-btn:hover, .reset-btn:hover, .clear-btn:hover {
+    background-color: rgb(219, 248, 255);
+    color: rgb(2, 204, 255);
+}
+
+.initials {
+    background-color: white;
+    border-radius: 25px;
+    border-color: rgb(2, 204, 255);
+    margin: 10px;
+    padding: 10px, 5px;
+    appearance: none;
+}
