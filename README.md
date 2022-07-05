@@ -19,6 +19,6 @@ tried to make the page as custom as i could im still getting the hang of it
 ![Screenshot 2022-07-05 164925](https://user-images.githubusercontent.com/102047814/177414280-e1c63019-4122-4fb6-a4c5-aae40a98d406.png)
 
 
-link to working web page === git@github.com:Jesse115/The-Greatest-coding-quiz-evey-.git
+link to working web page === https://jesse115.github.io/The-Greatest-coding-quiz-evey-/
 
 Thank you please help me get better, i am completly open to all criticism and love feedback of both types 
